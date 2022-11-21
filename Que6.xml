@@ -1,0 +1,23 @@
+<BankAccountDetailsList>
+    <BankAccountDetails>
+        <AccountNo>112233</AccountNo>
+        <AccountType>Saving Account</AccountType>
+        <Balance>20000</Balance>
+        <Customer_Id>32176</Customer_Id>
+        <CustomerName>Aman</CustomerName>
+    </BankAccountDetails>
+    <BankAccountDetails>
+        <AccountNo>112234</AccountNo>
+        <AccountType>Saving Account</AccountType>
+        <Balance>40002</Balance>
+        <Customer_Id>32226</Customer_Id>
+        <CustomerName>Ankit</CustomerName>
+    </BankAccountDetails>
+    <BankAccountDetails>
+        <AccountNo>112243</AccountNo>
+        <AccountType>Saving Account</AccountType>
+        <Balance>246600</Balance>
+        <Customer_Id>34567</Customer_Id>
+        <CustomerName>Amit</CustomerName>
+    </BankAccountDetails>
+</BankAccountDetailsList>

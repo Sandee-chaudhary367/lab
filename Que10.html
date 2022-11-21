@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button id="fetchbutton" type="button" onclick="loadDoc()">Request data</button>
+
+<div id="demo"></div>
+
+<script>
+function loadDoc() {
+  let fetchbutton=document.getElementById("fetchbutton");
+  let dothis=function(){
+  
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "https://jsonplaceholder.typicode.com/users", true);
+    xhttp.onload=function(){
+       let data=this.responseText;
+       const obj = JSON.parse(data);
+       obj.forEach(element => {
+        const para = document.createElement("p");
+        const node = document.createTextNode(element.name);
+        para.appendChild(node);
+
+        const element2 = document.getElementById("demo");
+        element2.appendChild(para);
+       });
+       
+    };
+    xhttp.send();
+
+  }
+  fetchbutton.addEventListener("click",dothis);
+}
+</script>
+
+</body>
+</html>
