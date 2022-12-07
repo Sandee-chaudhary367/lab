@@ -12,6 +12,7 @@
 <th>Customer Name</th>
 </tr>
 <xsl:for-each select="BankAccountDetailsList/BankAccountDetails">
+      
       <tr>
         <td><xsl:value-of select="AccountNo"/></td>
         <td><xsl:value-of select="AccountType"/></td>
@@ -19,7 +20,8 @@
         <td><xsl:value-of select="Customer_Id"/></td>
         <td><xsl:value-of select="CustomerName"/></td>
       </tr>
- </xsl:for-each>
+
+</xsl:for-each>
 </table>
 </body>
  </html>
